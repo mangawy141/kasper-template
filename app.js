@@ -1,3 +1,11 @@
+
+let sections = document.querySelectorAll("section");
+  sections.forEach(el => {
+    el.addEventListener('click',function(){
+      el.scrollIntoView({ behavior: "smooth" });
+    })
+  })
+
 // navigation bar fixed state
 
 let header = document.getElementById("navigation");
@@ -23,7 +31,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-let sections = document.querySelectorAll("section");
 
 headerLinks.forEach((el) => {
   el.addEventListener("click", function (event) {

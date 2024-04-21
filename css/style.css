@@ -474,7 +474,7 @@ carousel-control-next {
   background: none;
 }
 .carousel-control-prev span{
-  margin-left: 40%;
+  transform: translateX(100%);
 }
 .carousel-icon {
   font-size: 2.5rem;
@@ -558,6 +558,15 @@ carousel-control-next {
     justify-content: center;
     gap: 2rem;
     padding: 20px 30px 15px 10%;
+  }
+}
+
+@media (max-width:768px){
+  .carousel-caption {
+    width: 100%;
+    text-align: center;
+    gap: 0;
+    padding-inline: 30px;
   }
 }
 
@@ -676,6 +685,7 @@ carousel-control-next {
     transform: translateY(0);
   }
 }
+
 
 /*--------------*/
 /* end section */
